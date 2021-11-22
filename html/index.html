@@ -4,11 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
     <title>송혜원</title>
   </head>
   <body>
     <div id="wrap">
       <h1 id="logo">마니또를 뽑자</h1>
+      <form action="">
+        <table>
+          <colgroup>
+            <col style="width: 20%" />
+            <col style="width: 80%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope="row">이름<span class="require">*</span></th>
+              <td><input type="text" name="" id="name" /></td>
+            </tr>
+            <tr>
+              <th scope="row">휴대전화<span class="require">*</span></th>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <th scope="row">이메일<span class="require">*</span></th>
+              <td class="email">
+                <input type="email" name="" id="email01" />
+                <span>@</span>
+                <select name="" id="email02">
+                  <option value="">직접 입력하기</option>
+                  <option value="">naver.com</option>
+                  <option value="">google.com</option>
+                  <option value="">daum.net</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
     </div>
   </body>
 </html>
