@@ -1,0 +1,36 @@
+#wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  .box {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(33, 109, 33);
+    border: 30px solid #fff;
+    border-radius: 50px;
+    position: relative;
+    #logo {
+      text-transform: capitalize;
+      color: white;
+      font-size: 6rem;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .enter {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-decoration: none;
+      color: black;
+      background-color: #fff;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      border-radius: 50px;
+    }
+  }
+}
