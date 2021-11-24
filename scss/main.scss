@@ -1,36 +1,156 @@
+@import "vars";
+@import "mixins";
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans Condensed", "Poor Story", sans-serif;
+  color: $black-color;
+}
 #wrap {
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: brown;
+  background-color: $background-color;
+  position: relative;
+  overflow: hidden;
   .box {
-    width: 500px;
-    height: 400px;
-    background-color: rgb(33, 109, 33);
-    border: 30px solid #fff;
-    border-radius: 50px;
-    position: relative;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    border: 3px solid $semi-color;
+    border-bottom: none;
+    background-color: $background-color;
+    border-radius: 20px;
     #logo {
       text-transform: capitalize;
       color: white;
-      font-size: 6rem;
+      font-size: 4.2rem;
       position: absolute;
-      top: 25%;
+      top: 20%;
       left: 50%;
       transform: translateX(-50%);
+      text-shadow: 5px 5px 2px $point-color;
+    }
+    .mainImgBox {
+      width: 140%;
+      position: absolute;
+      left: 63%;
+      bottom: -11%;
+      transform: translate(-50%, -50%);
+      img {
+        width: 100%;
+      }
+    }
+    a {
+      font-size: $small-size;
+      width: 180px;
+      height: 35px;
+      font-weight: 700;
+      box-shadow: 0 4px 2px darken($background-color, 8);
     }
     .enter {
       position: absolute;
-      top: 60%;
+      top: 63%;
       left: 50%;
       transform: translateX(-50%);
       text-decoration: none;
-      color: black;
-      background-color: #fff;
-      padding: 15px 30px;
-      font-size: 1.5rem;
+      color: $white-color;
+      background-color: $point-color;
       border-radius: 50px;
+      white-space: nowrap;
+      text-transform: capitalize;
+      @include flexCenter();
+    }
+    .check {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-decoration: none;
+      color: $background-color;
+      background-color: rgba($white-color, 0.7);
+      border: 2px solid $semi-color;
+      border-radius: 50px;
+      white-space: nowrap;
+      text-transform: capitalize;
+      @include flexCenter();
+    }
+  }
+}
+
+@media all and (min-width: 400px) {
+  #wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+    position: relative;
+    .box {
+      position: static;
+      width: 400px;
+      height: 500px;
+      border: none;
+      background-color: $semi-color;
+      border-radius: 20px;
+      #logo {
+        text-transform: capitalize;
+        color: white;
+        font-size: 4.2rem;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-shadow: 5px 5px 2px $point-color;
+      }
+      .mainImgBox {
+        display: none;
+      }
+      a {
+        font-size: $small-size;
+        width: 180px;
+        height: 35px;
+        font-weight: 700;
+        box-shadow: 0 4px 2px darken($background-color, 8);
+      }
+      .enter {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        color: $white-color;
+        background-color: $point-color;
+        border-radius: 50px;
+        white-space: nowrap;
+        text-transform: capitalize;
+        @include flexCenter();
+      }
+      .check {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        color: $background-color;
+        background-color: rgba($white-color, 0.7);
+        border: 2px solid $background-color;
+        border-radius: 50px;
+        white-space: nowrap;
+        text-transform: capitalize;
+        @include flexCenter();
+      }
     }
   }
 }
