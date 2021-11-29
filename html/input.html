@@ -1,28 +1,34 @@
 <? include("../include/header.html") ?>
 <div id="wrap">
     <div class="box"> 
-        <form action="" id="info">
-          <table>
-            <colgroup>
-              <col style="width: 40%" />
-              <col style="width: 60%" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <th scope="row">Event Name<span class="require">*</span></th>
-                <td><input type="text" name="" id="eventName" /></td>
-              </tr>
-              <tr>
-                <th scope="row">Event D-day<span class="require">*</span></th>
-                <td><input type="date" name="" id="date" /></td>
-              </tr>
-              <tr>
-                <th scope="row">Host Name<span class="require">*</span></th>
-                <td><input type="text" name="" id="hostName" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </form>
+        <h2 style="display: none;">파티생성</h2>
+        <div class="inputContent">
+          <div class="partyName">
+            <h3 class="inputTitle">
+              <label for="partyName">Party Name</label>
+            </h3>
+            <span class="inputBox">
+              <input type="text" name="partyName" maxlength="20">
+            </span>
+          </div>
+          <div class="partyOwn">
+            <h3 class="inputTitle">
+              <label for="partyOwn">Party Owner</label>
+            </h3>
+            <span class="inputBox">
+              <input type="text" name="partyOwn" maxlength="20">
+            </span>
+          </div>
+          <div class="password">
+            <h3 class="inputTitle">
+              <label for="partyOwn">Password</label>
+            </h3>
+            <span class="inputBox">
+              <input type="text" name="password" maxlength="20">
+            </span>
+          </div>
+          <button type="button"><span>Generate Party!</span></button>
+        </div>
       </div>
     </div>
   </body>

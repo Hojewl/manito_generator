@@ -32,4 +32,17 @@ form {
       }
     }
   }
+  .submit {
+    padding: 10px 20px;
+    border: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white-color;
+    background-color: $point-color;
+    border-radius: 50px;
+    white-space: nowrap;
+    @include flexCenter();
+  }
 }
