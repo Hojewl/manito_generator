@@ -1,0 +1,21 @@
+/******color palete*******/
+/*************************/
+.inputContent { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.inputContent .inputTitle { font-size: 20px; margin-bottom: 10px; }
+
+.inputContent .inputBox { display: inline-block; margin-bottom: 20px; }
+
+.inputContent .inputBox input { width: 180px; border: none; padding: 5px 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; }
+
+.inputContent button { border: none; padding: 10px 30px; border-radius: 20px; color: #fff; background-color: #b43322; margin-top: 30px; font-weight: 700; font-size: 14px; cursor: pointer; -webkit-box-shadow: 0 4px 2px #1d6f4d; box-shadow: 0 4px 2px #1d6f4d; }
+
+#linkWrap { width: 250px; height: 150px; background-color: #fff2d5; border-radius: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+
+#linkWrap .ment { font-size: 18px; font-weight: 600; color: #333; }
+
+#linkWrap .linkBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#linkWrap .linkBox .link { background-color: #fff; border-radius: 10px; padding: 10px; width: 150px; height: 35px; margin-right: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+#linkWrap .linkBox .copy { width: 50px; height: 35px; color: #70ff9b; background-color: #268f63; border: none; -webkit-box-shadow: 0 4px 2px #1b6747; box-shadow: 0 4px 2px #1b6747; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
